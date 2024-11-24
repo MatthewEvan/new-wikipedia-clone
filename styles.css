@@ -122,7 +122,7 @@ nav svg {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 97%);
     padding: 1rem;
     border-radius: 0.25rem;
     position: sticky;
@@ -132,9 +132,22 @@ nav svg {
 
 #navigation h1,
 #appearance h1 {
-    padding: 0 0 0.1rem;
-    border-bottom: 2px solid hsl(0, 0%, 0%);
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
+}
+
+#navigation ul, #appearance ul {
+    display: flex;
+    flex-direction: column;
+}
+#appearance ul li span {
+    margin-right: 0.5rem;
+}
+#navigation ul h2, #appearance ul h2 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 0%, 0.8);
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.25);
+    margin-bottom: 0.25rem;
 }
 
 /* MAIN ARTICLE   MAIN ARTICLE   MAIN ARTICLE  */
@@ -153,6 +166,30 @@ nav svg {
     gap: 0.4rem;
 }
 
+#wiki-topic > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1.5px hsl(0, 0%, 0%);
+}
+
+#wiki-topic div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #3366CC;
+    gap: 0.3rem;
+    font-weight: 600;
+}
+
+#wiki-topic div div svg:first-child {
+    width: 24px;
+    height: 24px;
+}
+#wiki-topic div div svg:last-child {
+    width: 12px;
+    height: 12px;
+}
 #wiki-topic .source {
     font-size: 0.8rem;
     font-weight: 600;
