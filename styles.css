@@ -18,7 +18,7 @@ body {
 }
 
 main {
-    margin: 1rem 3vw 1rem;
+    margin: 1rem 3vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -42,6 +42,8 @@ sup {
     font-size: 0.55rem;
 }
 
+
+/* WIKIPEDIA NAVIGATION BAR */
 nav {
     width: 100%;
     height: 3.5rem;
@@ -49,7 +51,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 4px -2px, rgba(0, 0, 0, 0.3) 0px 1px 4px -3px;
 }
 .wiki-logo {
     display: flex;
@@ -107,3 +109,81 @@ nav svg {
     width: 24px;
 }
 
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* NAVIGATION STYLING    NAVIGATION STYLING */
+#navigation,
+#appearance {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background-color: hsl(0, 0%, 92%);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    position: sticky;
+    top: 1rem;
+    flex: 1;
+}
+
+#navigation h1,
+#appearance h1 {
+    padding: 0 0 0.1rem;
+    border-bottom: 2px solid hsl(0, 0%, 0%);
+    font-size: 1.125rem;
+}
+
+/* MAIN ARTICLE   MAIN ARTICLE   MAIN ARTICLE  */
+
+.main-article {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#wiki-topic {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+#wiki-topic .source {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.inserted {
+    padding: 0.25rem 2.5rem;
+    background-color: hsl(0, 0%, 92%);
+    border-radius: 0.2rem;
+}
+
+/* MAIN INFO  */
+.main-info,
+#name,
+#general-concept {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.main-info p,
+#name p,
+#general-concept p {
+    text-align: justify;
+}
+
+#content .main-article h2 {
+    border-bottom: solid 1.5px hsl(0, 0%, 0%);
+    border-radius: 0.1rem;
+}
+
+#general-concept .inserted {
+    margin: 0.25rem 0;
+}
