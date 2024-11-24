@@ -51,7 +51,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 4px -2px, rgba(0, 0, 0, 0.3) 0px 1px 4px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 4px -2px, rgba(0, 0, 0, 0.3) 0px 1px 4px -3px;
 }
 .wiki-logo {
     display: flex;
@@ -122,7 +122,7 @@ nav svg {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-    background-color: hsl(0, 0%, 92%);
+    background-color: hsl(0, 0%, 95%);
     padding: 1rem;
     border-radius: 0.25rem;
     position: sticky;
@@ -160,7 +160,7 @@ nav svg {
 
 .inserted {
     padding: 0.25rem 2.5rem;
-    background-color: hsl(0, 0%, 92%);
+    background-color: hsl(0, 0%, 95%);
     border-radius: 0.2rem;
 }
 
@@ -186,4 +186,36 @@ nav svg {
 
 #general-concept .inserted {
     margin: 0.25rem 0;
+}
+
+.para-and-table {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.main-info {
+    flex: 2;
+}
+table {
+    border: 0.25px solid hsla(0, 0%, 0%, 0.5);
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    flex: 1;
+}
+
+table tr th {
+    width: 35%;
+}
+
+th, td {
+    text-align: left;
+}
+
+table tr td img {
+    width: 80%;
+}
+
+.table-header {
+    text-align: center;
+    background-color: #E6E6FA;
 }

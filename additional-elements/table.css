@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+body {
+    padding: 4rem;
+}
+
+table {
+    border: 0.25px solid hsla(0, 0%, 0%, 0.5);
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    width: 300px;
+}
+
+table tr th {
+    width: 30%;
+}
+
+
+th, td {
+    text-align: left;
+    padding: 0.2rem;
+}
+
+.table-header {
+    text-align: center;
+    background-color: #E6E6FA;
+}
+
+
+
